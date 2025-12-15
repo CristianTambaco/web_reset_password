@@ -34,11 +34,11 @@ document.getElementById('resetForm').addEventListener('submit', async (e) => {
   const params = new URLSearchParams(hash);
   const accessToken = params.get('access_token');
 
-  if (!accessToken) {
-    errorDiv.textContent = 'Token inválido o expirado';
-    errorDiv.style.display = 'block';
-    return;
-  }
+  // if (!accessToken) {
+  //   errorDiv.textContent = 'Token inválido o expirado';
+  //   errorDiv.style.display = 'block';
+  //   return;
+  // }
 
   submitBtn.disabled = true;
   btnText.style.display = 'none';
